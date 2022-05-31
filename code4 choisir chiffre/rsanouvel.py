@@ -141,7 +141,7 @@ if __name__=='__main__':
     OrLa = (p-1)*(q-1)  # 欧拉函数
     
     while True: # 取一个合适的e，这里的e要和OrLa互素才行
-        d = random.randint (1,1/3*pow(n,1/4))
+        d = random.randint (1,99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999)
         if gcd(d, OrLa) == 1:
             break
         else:
@@ -164,12 +164,11 @@ if __name__=='__main__':
 
     C = pow_mod(M, e, n) # 加密
     print('\n on peut obtenir les chiffrés：\n%d\n'%C)
-    if d < 1/3*pow(n,1/4):
-       print("oui")
-    else:print("non")
-    
 
-  
+    if d < 1/3*pow(n,1/4):
+       print("mauvais chiffré")
+    else:print("bon chiffré")
+    
 
 
     
